@@ -27,8 +27,3 @@ module Algorithms
         Algorithms::MergeSort.run(vet)
     end
 end
-
-vet = [1, 6, 2, 5, 10, 9, 8, 7]
-test = Algorithms.insertion_sort! vet
-print "vet:#{vet}"
-print "test:#{test}"
