@@ -1,4 +1,5 @@
 require_relative 'algorithms/insertion_sort'
+require_relative 'algorithms/selection_sort'
 require_relative 'algorithms/quick_sort'
 require_relative 'algorithms/merge_sort'
 
@@ -9,6 +10,14 @@ module Algorithms
 
     def self.insertion_sort!(vet)
         Algorithms::InsertionSort.run(vet)
+    end
+
+    def self.selection_sort(vet)
+        Algorithms::SelectionSort.run(vet, {new_list: true})
+    end
+
+    def self.selection_sort!(vet)
+        Algorithms::SelectionSort.run(vet)
     end
 
     def self.quick_sort(vet)
